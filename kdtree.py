@@ -1,8 +1,13 @@
+import numpy as np
 from kdnode import KDNode
+from node import Node
 
 class KDTree():
-    def __init__(self, x, y):
-        self.q_init = KDNode(None, x, y, 0)
+    def __init__(self, nd):
+        self.q_init = KDNode(None, nd, 0)
 
-    def add_node(self, x, y):
-        q_init.add_child(KD_Node(q_init, x, y, 0))
+    def search(self, new_nd):
+        return self.q_init.search(KD_Node(q_init, new_nd, 0))
+        
+    
+

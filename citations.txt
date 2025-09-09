@@ -1,0 +1,2 @@
+[1] https://www.geeksforgeeks.org/dsa/search-and-insertion-in-k-dimensional-tree/
+[2] ChatGPT
