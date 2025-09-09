@@ -1,0 +1,9 @@
+TREE structure:
+    q_init [node]: inital config
+    K [int]: number of verticies
+    u [float]: incremental distance
+    d [np.array]: domain size
+
+NODE structure:
+    point [np.array]: node location
+    q_near [np.array[nodes]] 
