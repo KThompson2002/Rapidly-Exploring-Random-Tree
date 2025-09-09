@@ -7,7 +7,7 @@ class KDTree():
         self.q_init = KDNode(None, nd, 0)
 
     def search(self, new_nd):
-        return self.q_init.search(KD_Node(q_init, new_nd, 0))
+        return self.q_init.search(KDNode(self.q_init, new_nd, 0))
         
     
 

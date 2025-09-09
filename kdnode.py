@@ -2,7 +2,7 @@ import numpy as np
 from node import Node
 
 class KDNode():
-    def _init(self, root, nd, align):
+    def __init__(self, root, nd, align):
         self.root = root
         self.nd = nd
         self.align = align
