@@ -38,36 +38,36 @@ class KDNode():
     #                 right.add_child(child)
 
     def search(self, child):
-        if align == 0:
-            if child.x < self.x:
-                if left is None:
+        if self.align == 0:
+            if child.nd.point[0] < self.nd.point[0]:
+                if self.left is None:
                     child.set_align(1)
-                    left = child
+                    self.left = child
                     return self.nd
                 else:
-                    return left.search(child)
+                    return self.left.search(child)
             else:
-                if right is None:
+                if self.right is None:
                     child.set_align(1)
-                    right = child
+                    self.right = child
                     return self.nd
                 else:
-                    return right.search(child)
+                    return self.right.search(child)
         else:
-            if child.y < self.y:
-                if left is None:
+            if child.point[1] < self.nd.point[1]:
+                if self.left is None:
                     child.set_align(0)
-                    left = child
+                    self.left = child
                     return self.nd
                 else:
-                    return left.search(child)
+                    return self.left.search(child)
             else:
-                if right is None:
+                if self.right is None:
                     child.set_align(0)
-                    right = child
+                    self.right = child
                     return self.nd
                 else:
-                    return right.search(child)
+                    return self.right.search(child)
 
     def set_align(align):
         self.align = align

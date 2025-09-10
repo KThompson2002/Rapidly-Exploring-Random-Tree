@@ -1,9 +1,9 @@
 import numpy as np
 
 class Node():
-    def __init__(self, root, x, y):
+    def __init__(self, root, pt):
         """Define node class initialization"""
-        self.point = np.array([x, y])
+        self.point = pt
         self.q_near = []
         self.root = root
 
